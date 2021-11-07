@@ -94,7 +94,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 50px 10px;
+    padding: 100px 10px;
     background-color: var(--secondary-color);
     font-size: 20px;
 }
@@ -109,7 +109,7 @@ header nav ul li a:hover {
 
 .cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 60%;
 }
@@ -119,29 +119,47 @@ header nav ul li a:hover {
 }
 
 .card {
+    display: flex;
     background-color: var(--primary-color);
     padding: 5px;
-    margin: 25px;
-}
-
-.card a {
+    margin: 30px;
     text-decoration: none;
     color:white;
+    width: 40%;
+    min-width: 300px;
 }
 
-.card h3 {
+.card-info {
     position: absolute;
     background-color: var(--primary-color);
     margin: 50px 0;
     padding: 25px;
+    width: 250px;
+}
+
+.card-info h3 {
     font-size: 30px;
-    max-width: 250px;
+    border-bottom: 1px solid;
+}
+
+.card img {
+    width: 100%;
 }
 
 .contact {
     width: 60%;
     margin: auto;
     padding: 20px 50px;
+}
+
+.contact a {
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+}
+
+.contact a:hover {
+    color: blue;
 }
 
 footer {
