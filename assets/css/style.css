@@ -60,35 +60,39 @@ header nav ul li a:hover {
 .hero {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     background-color: var(--primary-color);
+    font-size: 20px;
 }
 
 .hero img {
-    max-inline-size: 30%;
+    max-width: 30%;
+}
+
+.about {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: start;
+margin: 10px;
+}
+
+.about h2 {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.about-info {
+    width: 40%;
+    padding: 50px;
+    margin: auto;
 }
 
 .section-title {
-    display: flex;
-    justify-content: start;
     font-size: 40px;
     margin-bottom: 15px;
     padding-bottom: 20px;
     border-bottom: 3px solid;
 }
-
-.about {
-    margin: auto;
-    max-width: 30%;
-    font-size: 20px;
-}
-
-.hero h2 {
-    position: absolute;
-    font-size: 80px;
-    margin: 50px;
-}
-
 
 .projects {
     display: flex;
@@ -103,8 +107,7 @@ header nav ul li a:hover {
     margin: auto;
     padding: 50px;
     background: var(--primary-color);
-    max-width: 500px;
-    max-height: 500px;
+    width: 500px;
 }
 
 .cards {
@@ -135,6 +138,11 @@ header nav ul li a:hover {
     margin: 50px 0;
     padding: 25px;
     width: 250px;
+    opacity: 0.7;
+}
+
+.card:hover .card-info{
+    opacity: 1;
 }
 
 .card-info h3 {
@@ -144,6 +152,10 @@ header nav ul li a:hover {
 
 .card img {
     width: 100%;
+}
+
+.cover:empty {
+    background-color: rgb(150,156,163);
 }
 
 .contact {
@@ -165,4 +177,91 @@ header nav ul li a:hover {
 footer {
     background-color: var(--primary-color);
     font-size: 20px;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        position: relative;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero img {
+       max-width: 60%;;
+    }
+
+    .about h2 {
+        margin: auto;
+    }
+
+    .about-info {
+        padding: 50px 0;
+        width: 60%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        padding: 5px;
+        border-bottom: 3px solid var(--primary-color);
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+
+    .about {
+        margin: 0;
+        padding: 50px;
+    }
+
+    .about h2 {
+        margin: 0;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+
+    .projects {
+        padding: 50px 0;
+    }
+
+    .project-info {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards {
+        padding-top: 50px;
+        width: 80%;
+    }
+
+    .contact {
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li {
+        text-align: right;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .cards {
+        width: 100%;
+    }
 }
