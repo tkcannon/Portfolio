@@ -20,8 +20,8 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
+    padding: 10px;
     top: 0;
-    width: 100%;
     background-color: var(--secondary-color);
     z-index: 9999;
 }
@@ -33,20 +33,24 @@ header a {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 40px;
+}
+
+header nav {
+    margin: 10px;
 }
 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     list-style: none;
 }
 
 header nav ul li a {
+    font-weight: bold;
     margin: 10px;
     padding: 10px 50px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 header nav ul li a:hover {
@@ -74,14 +78,15 @@ header nav ul li a:hover {
 }
 
 .about {
-    margin: 25px;
-    width: 60%;
+    margin: auto;
+    max-width: 30%;
     font-size: 20px;
 }
 
-.about h2 {
+.hero h2 {
+    position: absolute;
     font-size: 80px;
-    margin-bottom: 30px;
+    margin: 50px;
 }
 
 
@@ -89,6 +94,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 50px 10px;
     background-color: var(--secondary-color);
     font-size: 20px;
 }
@@ -105,14 +111,22 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 25px;
     width: 60%;
+}
+
+#primary-card {
+    width: 100%;
 }
 
 .card {
     background-color: var(--primary-color);
     padding: 5px;
     margin: 25px;
+}
+
+.card a {
+    text-decoration: none;
+    color:white;
 }
 
 .card h3 {
@@ -124,12 +138,10 @@ header nav ul li a:hover {
     max-width: 250px;
 }
 
-.card img {
-    flex: 1;
-}
-
 .contact {
-    padding: 25px;
+    width: 60%;
+    margin: auto;
+    padding: 20px 50px;
 }
 
 footer {
