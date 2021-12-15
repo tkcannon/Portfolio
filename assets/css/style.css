@@ -31,6 +31,10 @@ header a {
     color: white;
 }
 
+header a:hover {
+    color: var(--primary-color);
+}
+
 header h1 {
     font-weight: bold;
     font-size: 40px;
@@ -54,6 +58,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
+    color: var(--secondary-color);
     background-color: var(--primary-color);
 }
 
@@ -119,6 +124,11 @@ margin: 10px;
 
 #primary-card {
     width: 100%;
+    min-height: 600px;
+    padding: 0;
+    background-image: url(../images/can-we-make-it-screenshot-1.png);
+    background-size: cover;
+    border: 5px var(--primary-color) solid;
 }
 
 .card {
@@ -130,15 +140,16 @@ margin: 10px;
     color:white;
     width: 40%;
     min-width: 300px;
+    filter: drop-shadow(10px 7px 15px #2A0A11);
 }
 
 .card-info {
     position: absolute;
     background-color: var(--primary-color);
     margin: 50px 0;
-    padding: 25px;
-    width: 250px;
-    opacity: 0.7;
+    padding: 30px 25px;
+    min-width: 35%;
+    opacity: 0.8;
 }
 
 .card:hover .card-info{
@@ -152,6 +163,7 @@ margin: 10px;
 
 .card img {
     width: 100%;
+    /* object-fit: fill; */
 }
 
 .cover:empty {
